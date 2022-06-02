@@ -1,0 +1,72 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import LinkTo from "@storybook/addon-links/react";
+
+<Meta
+  title="getting started"
+  subTitle="What is this?"
+  parameters={{
+    componentSubtitle: "Getting started",
+    previewTabs: {
+      canvas: { hidden: true },
+    },
+  }}
+/>
+
+<h1
+  style={{
+    fontSize: "xxx-large",
+    borderBottom: "solid 1px black",
+    borderColor: "#ccc",
+    marginBottom: 0,
+    paddingBottom: 0,
+  }}
+>
+  Deer Components
+</h1>
+
+<div class="flex flex-row w-full justify-between ">
+  <div>
+    <h1 style={{ marginBottom: 30, color: 'cyan' }}>
+      Component Library
+    </h1>
+    <section style={{ paddingLeft: '20px' }}>
+      <div style={{ paddingLeft: '20px' }}>
+        <p>
+          <b>What is this?</b>
+        </p>
+        <p>
+    This is a component library to create more complex components in the app.
+        </p>
+      </div>
+      <div
+        style={{
+          borderBottom: 'solid 1px black',
+          borderColor: '#ccc',
+          marginBottom: 30,
+        }}
+      ></div>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between'
+        }}
+      >
+        <ul style={{ listStyleType: 'none' }}>
+          <li style={{ fontSize: '1.5rem', marginBottom: 20 }}>
+            <LinkTo
+              kind="getting started/Component Library"
+              story="Installation"
+            >
+              <span style={{ color: 'cyan', fontSize: '1em' }}>
+                Installation
+              </span>
+            </LinkTo>
+          </li>
+        
+        </ul>
+      </div>
+    </section>
+
+  </div>
+</div>
